@@ -1,6 +1,6 @@
 # Data handling
-pandas==2.2.2
 numpy==1.26.4
+pandas==2.2.2
 scipy==1.11.2
 
 # Machine Learning
