@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white)](https://www.python.org/)  
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.35.0-orange?logo=streamlit&logoColor=white)](https://streamlit.io/)  
 
-A **machine learning-based music recommendation engine** that suggests albums based on genres, artist stats, record labels, album ratings, etc. — all in a **simple, interactive web app** built with Streamlit.  
+A **machine learning-based music recommendation engine** that suggests albums based on genres, artist stats, record labels, album ratings, etc. all in a **simple, interactive web app** built with Streamlit.  
 
 ---
 
@@ -33,15 +33,17 @@ Try it live: [Run on Streamlit Cloud](https://musicrecsystem.streamlit.app/)
 
 ## 📦 Quick Start
 
-1. Clone the repository:
+Follow these steps to get the Music Rec System up and running locally:
+
 ```bash
+# 1. Clone the repository
 git clone https://github.com/montanezm1/music-rec-system.git
 cd music-rec-system
 
-2. Install dependencies
-```bash
+# 2. Install dependencies
 pip install -r requirements.txt
 
-3. Run the app
-```bash
+# 3. Run the app
 streamlit run app.py
+
+
