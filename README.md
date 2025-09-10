@@ -1,37 +1,47 @@
-# music_rec_system
+# Music Rec System
 
-A machine learning-based music recommendation engine that personalizes album suggestions using user preferences and audio features. Built with Python, Pandas, Scikit-Learn, and Streamlit for a responsive user interface.
+[![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white)](https://www.python.org/)  
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.35.0-orange?logo=streamlit&logoColor=white)](https://streamlit.io/)  
 
----
-
-## 🔍 Overview
-
-This project leverages a dataset of 500+ music albums and machine learning algorithms to suggest similar music based on user-selected favorites. It aims to explore recommender system fundamentals while offering a practical, interactive experience.
+A **machine learning-based music recommendation engine** that suggests albums based on genres, artist stats, record labels, album ratings, etc. — all in a **simple, interactive web app** built with Streamlit.  
 
 ---
 
-## 🚀 Features
+## 🚀 Demo
 
-- Personalized recommendations using cosine similarity
-- Real-time updates via Streamlit UI
-- Intuitive interface for album selection and exploration
-- Clean, local-first architecture for simple deployment
+Try it live: [Run on Streamlit Cloud](https://musicrecsystem.streamlit.app/)  
+
+---
+
+## 🔍 Features
+
+- Personalized **Top-N recommendations** based on cosine similarity.  
+- **Random related album pick** for music discovery.  
+- **Interactive Streamlit UI** with album covers.  
+- Uses **numeric + categorical features** (genres, labels, ratings, release year).  
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend/UI:** Streamlit
-- **Backend:** Python, Pandas, NumPy
-- **ML:** Scikit-Learn
-- **Dataset:** CSV file of albums with features (e.g. genre, artist, ratings, etc.)
+- **Frontend:** Streamlit  
+- **Backend:** Python, Pandas, NumPy  
+- **Machine Learning:** Scikit-Learn (CountVectorizer, MinMaxScaler, cosine similarity)  
+- **Dataset:** 2000+ albums extracted from Musicboard  
 
 ---
 
-## 📦 Setup Instructions
+## 📦 Quick Start
 
-### 1. Clone the repository
+1. Clone the repository:
 ```bash
 git clone https://github.com/montanezm1/music-rec-system.git
 cd music-rec-system
 
+2. Install dependencies
+```bash
+pip install -r requirements.txt
+
+3. Run the app
+```bash
+streamlit run app.py
