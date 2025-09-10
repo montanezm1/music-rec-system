@@ -4,8 +4,8 @@ import pickle
 from recommender import recommend  
 
 # Load data and similarity matrix
-df = pd.read_csv("./data/ratings_data.csv")  # your albums DataFrame
-with open("./data/cosine_sim.pkl", "rb") as f:
+df = pd.read_csv("data/ratings_data.csv")  # your albums DataFrame
+with open("data/cosine_sim.pkl", "rb") as f:
     cosine_sim = pickle.load(f)
 
 # Streamlit App
